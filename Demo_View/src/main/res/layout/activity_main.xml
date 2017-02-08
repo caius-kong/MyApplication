@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:img="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.myapplication.MainActivity">
+
+    <com.example.myapplication.MyImageView
+        android:id="@+id/picIV"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        img:src="@drawable/girl"/>
+
+    <!-- 实测：@mipmap有点问题，可能和MyImageView内部使用的是Drawable有关吧 -->
+</RelativeLayout>

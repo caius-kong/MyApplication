@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        realease {
+            keyAlias 'Framework_okhttp'
+            keyPassword 'Framework_okhttp'
+            storeFile file('/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/key_store/Framework_okhttp_key.jks')
+            storePassword 'Framework_okhttp'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion '23.0.1'
+    defaultConfig {
+        applicationId "com.zbiti.myapplication"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false // 是否开启混淆
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.realease
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    // common
+    compile 'org.apache.commons:commons-lang3:3.5'
+    compile 'com.alibaba:fastjson:1.2.23'
+    compile 'com.google.code.gson:gson:2.8.0'
+    // okhttp
+    compile 'com.squareup.okhttp:okhttp:2.7.5'
+    compile 'com.squareup.okio:okio:1.8.0'
+    // Stetho core
+    compile 'com.facebook.stetho:stetho:1.4.2'
+    //If you want to add a network helper
+    compile 'com.facebook.stetho:stetho-okhttp3:1.4.2'
+}

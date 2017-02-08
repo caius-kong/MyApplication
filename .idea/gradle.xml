@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.2.1-all/4he45ttimtc6vkg3687o6bk5bd/gradle-3.2.1" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Demo_DropDownMenu" />
+            <option value="$PROJECT_DIR$/Demo_MVP" />
+            <option value="$PROJECT_DIR$/Demo_PhotoView" />
+            <option value="$PROJECT_DIR$/Demo_RecycleView" />
+            <option value="$PROJECT_DIR$/Demo_Retrofit+Rxjava" />
+            <option value="$PROJECT_DIR$/Demo_SystemBarTint" />
+            <option value="$PROJECT_DIR$/Demo_Toolbar+DrawerLayout" />
+            <option value="$PROJECT_DIR$/Demo_View" />
+            <option value="$PROJECT_DIR$/Demo_ViewPager" />
+            <option value="$PROJECT_DIR$/Demo_Volley" />
+            <option value="$PROJECT_DIR$/Demo_WebView" />
+            <option value="$PROJECT_DIR$/Demo_esperandro" />
+            <option value="$PROJECT_DIR$/Demo_fragment" />
+            <option value="$PROJECT_DIR$/Demo_listView_downRefresh" />
+            <option value="$PROJECT_DIR$/Framework_Rxjava" />
+            <option value="$PROJECT_DIR$/Framework_android-async-http" />
+            <option value="$PROJECT_DIR$/Framework_okhttp" />
+            <option value="$PROJECT_DIR$/Framework_retrofit" />
+            <option value="$PROJECT_DIR$/Framework_universal-image-loader" />
+            <option value="$PROJECT_DIR$/GestureDectectorDemo" />
+            <option value="$PROJECT_DIR$/HandlerThreadDemo" />
+            <option value="$PROJECT_DIR$/MobileYellowPages" />
+            <option value="$PROJECT_DIR$/SMS" />
+            <option value="$PROJECT_DIR$/Test_recreate" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

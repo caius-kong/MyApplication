@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="menu_square_bingo">Bingo首页</string>
+    <string name="menu_my_bingo">我的Bingo</string>
+    <string name="menu_my_favorite">我的收藏</string>
+    <string name="menu_change_theme">设置主题</string>
+    <string name="menu_feedback">意见反馈</string>
+    <string name="menu_send_to_friend">发送给好友</string>
+    <string name="menu_share">分享</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="about_author">关于作者</string>
+    <string name="about_app">关于软件</string>
+
+    <string name="ok">确认</string>
+    <string name="cancel">取消</string>
+
+    <string name="no_data">暂无数据</string>
+    <string name="load_data_fail">加载失败</string>
+    <string name="load_data_adequate">没有更多啦</string>
+    <string name="loading_data">加载中...</string>
+
+    <string name="open_by_explore">使用浏览器打开</string>
+
+    <string name="share_text">这是一个目前比较流行的android软件源码模型，如果你是一个android爱好者，一定要收藏哦！</string>
+    <string name="share">分享到</string>
+    <string name="no_email_app_tip">请先安装邮件应用并设置账户，或直接发送邮件至1032316751@qq.com。</string>
+    <string name="transfer_apk_to_friend">发送%1$s安装包给好友</string>
+
+    <string name="toast_exit_tip">再按一次退出应用</string>
+</resources>

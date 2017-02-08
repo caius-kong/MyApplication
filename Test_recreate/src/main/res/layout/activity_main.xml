@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hi"
+        android:textSize="24dp"/>
+
+    <EditText
+        android:layout_below="@id/tv_name"
+        android:id="@+id/et_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"/>
+
+    <Button
+        android:layout_below="@id/et_content"
+        android:id="@+id/btn_addCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="计数器按钮"/>
+
+    <Button
+        android:layout_below="@id/btn_addCount"
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下一页"/>
+</RelativeLayout>

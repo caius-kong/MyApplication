@@ -1,0 +1,116 @@
+{
+    "android_gradle_plugin_version": "2.2.3",
+    "apk_path": "/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/build/outputs/apk/Demo_Toolbar+DrawerLayout-debug.apk",
+    "apt": {
+        "Demo_Toolbar+DrawerLayout": {
+            "aptArgs": [
+                
+            ],
+            "aptOutput": "/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/build/generated/source/apt/debug",
+            "disableDiscovery": false,
+            "enabled": true,
+            "processor": null,
+            "processorPath": "/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/build/intermediates/exploded-aar/com.android.support/design/23.4.0/jars/classes.jar:/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.4.0/jars/classes.jar:/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/build/intermediates/exploded-aar/com.shamanland/fab/0.0.8/jars/classes.jar:/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.5.9/jars/classes.jar:/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar:/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/build/intermediates/exploded-aar/me.zhanghai.android.materialprogressbar/library/1.1.5/jars/classes.jar:/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/build/intermediates/exploded-aar/com.baoyz.actionsheet/library/1.1.5/jars/classes.jar:/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar:/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar:/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar:/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/build/intermediates/exploded-aar/com.github.zzz40500/android-shapeLoadingView/1.0.3.2/jars/classes.jar:/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/build/intermediates/exploded-aar/com.github.chrisbanes.photoview/library/1.2.4/jars/classes.jar:/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar:/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar:/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/build/intermediates/exploded-aar/io.reactivex/rxandroid/1.1.0/jars/classes.jar:/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/build/intermediates/exploded-aar/com.antfortune.freeline/runtime/0.8.4/jars/classes.jar:/Users/kongyunhui/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.1.0/748f0546d5c3c27f1aef07270ffea0c45f0c42a4/rxjava-1.1.0.jar:/Users/kongyunhui/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar:/Users/kongyunhui/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar:/Users/kongyunhui/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/7.0.1/d5d13ea991eab0252e3710e5df3d6a9d4b21d461/butterknife-7.0.1.jar:/Users/kongyunhui/.gradle/caches/modules-2/files-2.1/com.readystatesoftware.systembartint/systembartint/1.0.3/de4f7404e2f58d8f6e83cb1e85d0c2d6c2987287/systembartint-1.0.3.jar:/Users/kongyunhui/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar:/Users/kongyunhui/.gradle/caches/modules-2/files-2.1/de.devland.esperandro/esperandro-api/2.2.0/df81f1bc766b4d600f2b5e724c05774509b26ab4/esperandro-api-2.2.0.jar:/Users/kongyunhui/.gradle/caches/modules-2/files-2.1/de.greenrobot/eventbus/2.4.0/ddd166d01b3158d1c00576d29f7ed15c030df719/eventbus-2.4.0.jar:/Users/kongyunhui/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.0.0-beta4/739e00dea1f0ac04fdb9b6160d667e23cc50a791/retrofit-2.0.0-beta4.jar:/Users/kongyunhui/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.0.1/b34c1f2d993044656e87f88970b6818e99e886ba/okhttp-3.0.1.jar:/Users/kongyunhui/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar:/Users/kongyunhui/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.0.0-beta4/de5935a367ba5e343e9df786ac8fc0c7d52b5f0c/converter-gson-2.0.0-beta4.jar:/Users/kongyunhui/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.6.2/f1bc476cc167b18e66c297df599b2377131a8947/gson-2.6.2.jar:/Users/kongyunhui/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/adapter-rxjava/2.0.0-beta4/bd49baf667542c7d06f71e598bdee7fe57272013/adapter-rxjava-2.0.0-beta4.jar:/Users/kongyunhui/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/3.0.1/1d232df84491c0453e077002509911301109409d/logging-interceptor-3.0.1.jar:/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/libs/fastjson-1.2.7.jar:/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/libs/GifView.jar:/Users/kongyunhui/.gradle/caches/modules-2/files-2.1/de.devland.esperandro/esperandro/2.2.0/500ed092b6320bb25f84ebb76d1f3bf99a79062b/esperandro-2.2.0.jar:/Users/kongyunhui/Library/Android/sdk/extras/android/m2repository/com/android/support/appcompat-v7/23.4.0/appcompat-v7-23.4.0.aar:/Users/kongyunhui/Library/Android/sdk/extras/android/m2repository/com/android/support/design/23.4.0/design-23.4.0.aar:/Users/kongyunhui/Library/Android/sdk/extras/android/m2repository/com/android/support/cardview-v7/23.4.0/cardview-v7-23.4.0.aar:/Users/kongyunhui/.gradle/caches/modules-2/files-2.1/com.shamanland/fab/0.0.8/a5ea25431293594a299fa0ec25fe8485a15a87b8/fab-0.0.8.aar:/Users/kongyunhui/.gradle/caches/modules-2/files-2.1/com.afollestad.material-dialogs/core/0.8.5.9/733e763a41547d77ca9ffed5b57eab53528fdf21/core-0.8.5.9.aar:/Users/kongyunhui/.gradle/caches/modules-2/files-2.1/com.baoyz.actionsheet/library/1.1.5/883b3a41431874e16bd7361d9fb5568450db5bbb/library-1.1.5.aar:/Users/kongyunhui/.gradle/caches/modules-2/files-2.1/com.github.zzz40500/android-shapeLoadingView/1.0.3.2/d37fbd269d3f7e07b6b517e5e153c4dc75289caf/android-shapeLoadingView-1.0.3.2.aar:/Users/kongyunhui/.gradle/caches/modules-2/files-2.1/com.github.chrisbanes.photoview/library/1.2.4/a8339701c3e25ac02a631fc4e8f6941370311806/library-1.2.4.aar:/Users/kongyunhui/.gradle/caches/modules-2/files-2.1/io.reactivex/rxandroid/1.1.0/70751512690d3c21f2a03717f9e831fc09f60117/rxandroid-1.1.0.aar:/Users/kongyunhui/.gradle/caches/modules-2/files-2.1/com.squareup/javawriter/2.5.1/54c87b3d91238e5b58e1a436d4916eee680ec959/javawriter-2.5.1.jar:/Users/kongyunhui/.gradle/caches/modules-2/files-2.1/com.google.android/annotations/4.1.1.4/a1678ba907bf92691d879fef34e1a187038f9259/annotations-4.1.1.4.jar:/Users/kongyunhui/Library/Android/sdk/extras/android/m2repository/com/android/support/animated-vector-drawable/23.4.0/animated-vector-drawable-23.4.0.aar:/Users/kongyunhui/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/23.4.0/support-v4-23.4.0.aar:/Users/kongyunhui/Library/Android/sdk/extras/android/m2repository/com/android/support/support-vector-drawable/23.4.0/support-vector-drawable-23.4.0.aar:/Users/kongyunhui/Library/Android/sdk/extras/android/m2repository/com/android/support/recyclerview-v7/23.4.0/recyclerview-v7-23.4.0.aar:/Users/kongyunhui/.gradle/caches/modules-2/files-2.1/me.zhanghai.android.materialprogressbar/library/1.1.5/afbd308dd929885b239f90e170d9b88ed292bc07/library-1.1.5.aar"
+        }
+    },
+    "apt_libraries": {
+        "dagger": false,
+        "butterknife": true
+    },
+    "auto_dependency": true,
+    "build_cache_dir": "/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/build/freeline",
+    "build_directory": "/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/build",
+    "build_script": "./gradlew :Demo_Toolbar+DrawerLayout:assembleDebug",
+    "build_script_work_directory": "",
+    "build_tools_directory": "/Users/kongyunhui/Library/Android/sdk/build-tools/23.0.2",
+    "build_tools_version": "23.0.2",
+    "compile_sdk_directory": "/Users/kongyunhui/Library/Android/sdk/platforms/android-23",
+    "compile_sdk_version": "android-23",
+    "databinding": [
+        
+    ],
+    "databinding_compiler_jar": "",
+    "databinding_modules": [
+        
+    ],
+    "debug_package": "com.zbiti.myapplication",
+    "exclude_dep_res_paths": [
+        
+    ],
+    "extra_dep_res_paths": [
+        
+    ],
+    "freeline_cache_dir": "/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication",
+    "freeline_gradle_plugin_version": "0.8.4",
+    "java_home": "/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home",
+    "launcher": "com.zbiti.myapplication.ui.activity.SplashActivity",
+    "main_assets_directory": [
+        "/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/src/debug/assets",
+        "/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/src/main/assets"
+    ],
+    "main_jniLibs_directory": [
+        "/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/src/debug/jniLibs",
+        "/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/src/main/jniLibs"
+    ],
+    "main_jni_directory": [
+        "/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/src/debug/jni",
+        "/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/src/main/jni"
+    ],
+    "main_manifest_path": "/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/src/main/AndroidManifest.xml",
+    "main_project_dir": "Demo_Toolbar+DrawerLayout",
+    "main_project_name": "Demo_Toolbar+DrawerLayout",
+    "main_r_path": "/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/build/generated/source/r/debug/R.java",
+    "main_res_directory": [
+        "/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/src/debug/res",
+        "/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/src/main/res"
+    ],
+    "main_src_directory": [
+        "/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/src/debug/java",
+        "/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/src/main/java"
+    ],
+    "module_dependencies": {
+        "Demo_Toolbar+DrawerLayout": [
+            
+        ]
+    },
+    "modules": [
+        {
+            "name": "Demo_Toolbar+DrawerLayout",
+            "path": "/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout"
+        }
+    ],
+    "package": "com.zbiti.myapplication",
+    "product_flavor": "",
+    "project_source_sets": {
+        "Demo_Toolbar+DrawerLayout": {
+            "main_assets_directory": [
+                "/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/src/debug/assets",
+                "/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/src/main/assets"
+            ],
+            "main_jniLibs_directory": [
+                "/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/src/debug/jniLibs",
+                "/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/src/main/jniLibs"
+            ],
+            "main_jni_directory": [
+                "/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/src/debug/jni",
+                "/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/src/main/jni"
+            ],
+            "main_manifest_path": "/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/src/main/AndroidManifest.xml",
+            "main_res_directory": [
+                "/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/src/debug/res",
+                "/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/src/main/res"
+            ],
+            "main_src_directory": [
+                "/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/src/debug/java",
+                "/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication/Demo_Toolbar+DrawerLayout/src/main/java"
+            ]
+        }
+    },
+    "project_type": "gradle",
+    "retrolambda": {
+        
+    },
+    "root_dir": "/Users/kongyunhui/Documents/study/workspace/AndroidStudio/MyApplication",
+    "sdk_directory": "/Users/kongyunhui/Library/Android/sdk",
+    "use_jdk8": true
+}

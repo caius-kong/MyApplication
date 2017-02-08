@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Demo_DropDownMenu/Demo_DropDownMenu.iml" filepath="$PROJECT_DIR$/Demo_DropDownMenu/Demo_DropDownMenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo_MVP/Demo_MVP.iml" filepath="$PROJECT_DIR$/Demo_MVP/Demo_MVP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo_PhotoView/Demo_PhotoView.iml" filepath="$PROJECT_DIR$/Demo_PhotoView/Demo_PhotoView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo_RecycleView/Demo_RecycleView.iml" filepath="$PROJECT_DIR$/Demo_RecycleView/Demo_RecycleView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo_Retrofit+Rxjava/Demo_Retrofit+Rxjava.iml" filepath="$PROJECT_DIR$/Demo_Retrofit+Rxjava/Demo_Retrofit+Rxjava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo_SystemBarTint/Demo_SystemBarTint.iml" filepath="$PROJECT_DIR$/Demo_SystemBarTint/Demo_SystemBarTint.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo_Toolbar+DrawerLayout/Demo_Toolbar+DrawerLayout.iml" filepath="$PROJECT_DIR$/Demo_Toolbar+DrawerLayout/Demo_Toolbar+DrawerLayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo_Toolbar+DrawerLayout/Demo_Toolbar+DrawerLayout.iml" filepath="$PROJECT_DIR$/Demo_Toolbar+DrawerLayout/Demo_Toolbar+DrawerLayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo_View/Demo_View.iml" filepath="$PROJECT_DIR$/Demo_View/Demo_View.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo_ViewPager/Demo_ViewPager.iml" filepath="$PROJECT_DIR$/Demo_ViewPager/Demo_ViewPager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo_Volley/Demo_Volley.iml" filepath="$PROJECT_DIR$/Demo_Volley/Demo_Volley.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo_WebView/Demo_WebView.iml" filepath="$PROJECT_DIR$/Demo_WebView/Demo_WebView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo_esperandro/Demo_esperandro.iml" filepath="$PROJECT_DIR$/Demo_esperandro/Demo_esperandro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo_fragment/Demo_fragment.iml" filepath="$PROJECT_DIR$/Demo_fragment/Demo_fragment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo_listView_downRefresh/Demo_listView_downRefresh.iml" filepath="$PROJECT_DIR$/Demo_listView_downRefresh/Demo_listView_downRefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Framework_Rxjava/Framework_Rxjava.iml" filepath="$PROJECT_DIR$/Framework_Rxjava/Framework_Rxjava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Framework_android-async-http/Framework_android-async-http.iml" filepath="$PROJECT_DIR$/Framework_android-async-http/Framework_android-async-http.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Framework_okhttp/Framework_okhttp.iml" filepath="$PROJECT_DIR$/Framework_okhttp/Framework_okhttp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Framework_retrofit/Framework_retrofit.iml" filepath="$PROJECT_DIR$/Framework_retrofit/Framework_retrofit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Framework_universal-image-loader/Framework_universal-image-loader.iml" filepath="$PROJECT_DIR$/Framework_universal-image-loader/Framework_universal-image-loader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GestureDectectorDemo/GestureDectectorDemo.iml" filepath="$PROJECT_DIR$/GestureDectectorDemo/GestureDectectorDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HandlerThreadDemo/HandlerThreadDemo.iml" filepath="$PROJECT_DIR$/HandlerThreadDemo/HandlerThreadDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MobileYellowPages/MobileYellowPages.iml" filepath="$PROJECT_DIR$/MobileYellowPages/MobileYellowPages.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SMS/SMS.iml" filepath="$PROJECT_DIR$/SMS/SMS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test_recreate/Test_recreate.iml" filepath="$PROJECT_DIR$/Test_recreate/Test_recreate.iml" />
+    </modules>
+  </component>
+</project>

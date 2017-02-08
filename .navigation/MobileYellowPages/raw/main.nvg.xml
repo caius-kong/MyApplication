@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigationModel
+  ns = "http://schemas.android.com?import=com.android.tools.idea.editors.navigation.model.*">
+  <locations  
+    class = "java.util.ArrayList">
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.zbiti.myapplication.ExpressActivity"/>
+      <point      
+        x = "320"      
+        y = "152"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.zbiti.myapplication.view.NewsView"/>
+      <point      
+        x = "1440"      
+        y = "164"/>
+    </statePointEntry>
+  </locations>
+</navigationModel>
