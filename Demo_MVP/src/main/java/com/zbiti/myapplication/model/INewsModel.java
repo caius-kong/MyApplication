@@ -5,4 +5,6 @@ package com.zbiti.myapplication.model;
  */
 public interface INewsModel {
     void loadNews(String url, int pageIndex, NewsModel.OnLoadNewsListListener listener);
+
+    public void cancelTasks();
 }

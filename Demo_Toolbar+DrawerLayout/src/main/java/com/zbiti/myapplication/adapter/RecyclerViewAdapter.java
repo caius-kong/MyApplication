@@ -93,12 +93,15 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
         }
     }
 
-    public void addItems(List<String> items){
+    public void clear(){
         mList.clear();
-        if(items != null && items.size() > 0){
+    }
+
+    public void addItems(List<String> items){
+        if(items != null) {
             mList.addAll(items);
         }
-        notifyDataSetChanged();
+        this.notifyDataSetChanged();
     }
 
     /**

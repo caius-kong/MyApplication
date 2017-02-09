@@ -31,6 +31,16 @@ public class NewsPresenter implements INewsPresenter{
     }
 
     @Override
+    public void onDestroy() {
+        // 视图退出时，销毁相关持有
+        newsView = null;
+        if(newsModel != null){
+            newsModel.cancelTasks();
+            newsModel = null;
+        }
+    }
+
+    @Override
     public void loadNews(int pageIndex) {
         String url = "";
         Log.d("TAG", "presenter do load...");
