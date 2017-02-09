@@ -72,11 +72,14 @@ public class MainActivity extends BaseActivity {
 
     private void initView(){
         initToolBar(toolbar, false, "DEMO");
+
         ActionBarDrawerToggle drawerToggle = new ActionBarDrawerToggle(this, mainDrawerLayout, toolbar, 0, 0);
         drawerToggle.syncState();
 
         controlShowFragment(0);
+
         setOvalShapeViewBackground(floatingActionButton);
+
         View view = mainNavigationLayout.getHeaderView(0);
         ivUserAvatar = ButterKnife.findById(view, R.id.iv_user_avatar);
         tvNickName = ButterKnife.findById(view, R.id.tv_nick_name);

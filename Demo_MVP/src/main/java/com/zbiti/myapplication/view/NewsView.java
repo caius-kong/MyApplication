@@ -26,7 +26,9 @@ import java.util.List;
  * 3、当Model层数据加载成功之后会调用Presenter层的回调方法通知Presenter层数据加载完毕，
  * 4、最后Presenter层通过回调接口获得数据，再调用View层的接口将加载后的数据展示给用户。
  *
- * 总结：当View需要获得业务数据（暴露渲染接口） --> Presenter（在方法中实现回调接口） --> Model（设置回调接口）
+ * 总结：View调用PresenterI的接口方法请求数据，Presenter实现该接口方法并调用ViewI的接口方法返回数据，View实现ViewI的接口方法响应数据。（Presenter与Model的交互同理）
+ * 1、其实就是使用了接口回调，只不过他们是双向的
+ * 2、Presenter作为一个中介显而易见，他同时拥有ViewI和ModelI
  */
 public class NewsView extends AppCompatActivity implements INewsView, AbsListView.OnScrollListener {
     private ListView listView;
@@ -78,14 +80,7 @@ public class NewsView extends AppCompatActivity implements INewsView, AbsListVie
      */
     @Override
     public void addNews(List<News> newsList) {
-        if (data == null) {
-            data = new ArrayList<>();
-        }
-        data.addAll(newsList);
-        // 给适配器设置数据，并提醒
-        adapter.setData(data);
-        adapter.notifyDataSetChanged();
-
+        adapter.addItems(newsList);
         pageIndex++;
     }
 
@@ -95,7 +90,7 @@ public class NewsView extends AppCompatActivity implements INewsView, AbsListVie
     }
 
     /**
-     * 与用户进行交互
+     * 下拉加载
      */
     @Override
     public void onScrollStateChanged(AbsListView view, int scrollState) {

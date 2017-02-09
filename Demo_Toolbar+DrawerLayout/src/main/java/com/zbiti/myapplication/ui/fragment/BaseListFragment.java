@@ -60,9 +60,7 @@ public abstract class BaseListFragment extends Fragment implements CircleRefresh
 
         initView();
         initListener();
-
         startRefresh(); // 页面首次加载，默认刷新！
-
         return rootView;
     }
 
@@ -86,6 +84,7 @@ public abstract class BaseListFragment extends Fragment implements CircleRefresh
         recyclerView.setAdapter(mAdapter);
     }
 
+    // 注意：如果你使用的是虚拟机，必须使用鼠标点击才能触发监听，滚轮滚动无效！
     private void initListener(){
         // 监听滑动事件 - 上拉加载数据
         recyclerView.addOnScrollListener(new PauseOnScrollListener());
@@ -99,7 +98,7 @@ public abstract class BaseListFragment extends Fragment implements CircleRefresh
             super.onScrollStateChanged(recyclerView, newState);
             switch (newState) {
                 case RecyclerView.SCROLL_STATE_IDLE:
-                    // 滑动停止,判断是否触发 "上拉加载数据"
+                    // 滑动停止时，判断一定条件 -> 加载...
                     int size = recyclerView.getAdapter().getItemCount();
                     if (lastVisibleItem + 1 == size && mAdapter.isLoadMoreShown() &&
                             !mAdapter.getLoadMoreViewText().equals(getString(R.string.load_data_adequate))) {
@@ -125,7 +124,7 @@ public abstract class BaseListFragment extends Fragment implements CircleRefresh
     }
 
     /**
-     * 重写onEventMainThread，接收消息
+     * 重写onEventMainThread，接收消息(EventBus)
      *
      * @param event
      */
@@ -164,13 +163,11 @@ public abstract class BaseListFragment extends Fragment implements CircleRefresh
     }
 
     /**
-     *  刷新/加载成功的操作：UI更新、数据更新
+     *  ============ 处理result data —— UI更新、数据更新 ==================
      */
     public void refreshDataOnUi(List<String> list){
         // UI更新
-        System.out.println("1");
         completeRefresh();
-        System.out.println("2");
         if (list.size() == 0) {
             updateUi4DataEmpty();
         } else if (list.size() == PAGE_SIZE_LIMIT) {
@@ -179,7 +176,7 @@ public abstract class BaseListFragment extends Fragment implements CircleRefresh
             updateUi4DataInadequate();
         }
         // 数据更新
-        System.out.println("3");
+        data.clear();
         mAdapter.addItems(list);
     }
 
@@ -194,6 +191,7 @@ public abstract class BaseListFragment extends Fragment implements CircleRefresh
         mAdapter.addItems(list);
     }
 
+    // 数据为空
     private void updateUi4DataEmpty(){
         llStatus.setVisibility(View.VISIBLE);
         mAdapter.setLoadMoreViewVisibility(View.GONE);
@@ -201,17 +199,20 @@ public abstract class BaseListFragment extends Fragment implements CircleRefresh
         tvStatus.setText(getString(emptyDataString()));
     }
 
+    // 数据足够PAGE_SIZE
     private void updateUi4DataAdequate(){
         llStatus.setVisibility(View.GONE);
         mAdapter.setLoadMoreViewVisibility(View.VISIBLE);
         mAdapter.setLoadMoreViewText(getString(R.string.loading_data));
     }
 
+    //数据不足PAGE_SIZE
     private void updateUi4DataInadequate(){
         llStatus.setVisibility(View.GONE);
         mAdapter.setLoadMoreViewVisibility(View.GONE);
     }
 
+    //加载失败
     private void updateUi4DataFail() {
         llStatus.setVisibility(View.VISIBLE);
         mAdapter.setLoadMoreViewVisibility(View.GONE);

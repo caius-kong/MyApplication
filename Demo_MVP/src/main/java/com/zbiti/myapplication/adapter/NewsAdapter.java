@@ -22,7 +22,7 @@ import java.util.List;
  */
 public class NewsAdapter extends BaseAdapter{
     private Context context;
-    private List<News> list;
+    private List<News> list = new ArrayList<News>();
 
     public NewsAdapter(Context context){
         this.context = context;
@@ -31,6 +31,13 @@ public class NewsAdapter extends BaseAdapter{
 
     public void setData(List<News> list){
         this.list = list;
+    }
+
+    public void addItems(List<News> newsList){
+        if(newsList != null){
+            list.addAll(newsList);
+        }
+        notifyDataSetChanged();
     }
 
     @Override
