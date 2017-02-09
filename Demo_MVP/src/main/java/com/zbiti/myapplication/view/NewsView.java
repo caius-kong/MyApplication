@@ -51,6 +51,14 @@ public class NewsView extends AppCompatActivity implements INewsView, AbsListVie
         initEvent();
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        // 视图退出时，销毁相关持有
+        newsPresenter.onDestroy();
+        newsPresenter = null;
+    }
+
     private void initView() {
         listView = (ListView) findViewById(R.id.news_listview);
 

@@ -176,7 +176,7 @@ public abstract class BaseListFragment extends Fragment implements CircleRefresh
             updateUi4DataInadequate();
         }
         // 数据更新
-        data.clear();
+        mAdapter.clear();
         mAdapter.addItems(list);
     }
 

@@ -5,5 +5,6 @@ package com.zbiti.myapplication.presenter;
  */
 public interface INewsPresenter {
     void onCreate();
+    void onDestroy();
     void loadNews(int pageIndex);
 }

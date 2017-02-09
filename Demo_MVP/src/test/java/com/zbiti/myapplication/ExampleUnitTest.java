@@ -16,7 +16,7 @@ public class ExampleUnitTest {
         assertEquals(4, 2 + 2);
 
         List list = new ArrayList();
-        list.addAll(null);
+        list.addAll(new ArrayList());
         System.out.println(list);
     }
 }
