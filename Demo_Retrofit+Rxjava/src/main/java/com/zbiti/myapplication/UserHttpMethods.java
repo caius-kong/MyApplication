@@ -10,6 +10,7 @@ import okhttp3.Response;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.converter.scalars.ScalarsConverterFactory;
 import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Func1;
@@ -46,7 +47,11 @@ public class UserHttpMethods {
 
         retrofit = new Retrofit.Builder()
                 .client(builder.build())
+                //增加返回值为String的支持
+                .addConverterFactory(ScalarsConverterFactory.create())
+                //增加返回值为Gson的支持(以实体类返回)
                 .addConverterFactory(GsonConverterFactory.create())
+                //增加返回值为Oservable<T>的支持
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                 .baseUrl(BASE_URL)
                 .build();

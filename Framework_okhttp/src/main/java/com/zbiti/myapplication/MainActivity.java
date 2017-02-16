@@ -63,46 +63,47 @@ public class MainActivity extends AppCompatActivity {
 //
 //        sendPostDemo();
 
-//        mOkHttpClientManager._getAsyn("http://192.168.1.116:3000/sayhello", new OkHttpClientManager.ResultCallback<User>() {
-//            @Override
-//            public void onError(Request request, Exception e) {
-//                System.out.println("--->failed");
-//                e.printStackTrace();
-//            }
+        mOkHttpClientManager._getAsyn("http://192.168.1.116:3000/sayhello", new OkHttpClientManager.ResultCallback<User>() {
+            @Override
+            public void onError(Request request, Exception e) {
+                System.out.println("--->failed");
+                e.printStackTrace();
+            }
+
+            @Override
+            public void onResponse(User jsonObject) {
+                textView.setText(jsonObject.toString());//注意这里是UI线程
+            }
+        });
+
+        // ========== 数据库demo =============
+//        db = new MySQLiteOpenHelper(getApplicationContext()).getWritableDatabase();
 //
+//        DbCommand.query(db, DBInfos.USER_TABLE.TABLE_NAME, null, null, null, null, null, null, null, new DbCommand.ResultCallback<List<User2>>() {
 //            @Override
-//            public void onResponse(User jsonObject) {
-//                textView.setText(jsonObject.toString());//注意这里是UI线程
+//            public void updateUI(List<User2> list) {
+//                textView.setText(list.toString());
 //            }
 //        });
-
-        db = new MySQLiteOpenHelper(getApplicationContext()).getWritableDatabase();
-
-        DbCommand.query(db, DBInfos.USER_TABLE.TABLE_NAME, null, null, null, null, null, null, null, new DbCommand.ResultCallback<List<User2>>() {
-            @Override
-            public void updateUI(List<User2> list) {
-                textView.setText(list.toString());
-            }
-        });
-
-        btn_insert.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                ContentValues values = new ContentValues();
-                values.put("id", RandomUtils.nextInt());
-                values.put("name", "kyh");
-                values.put("phone", "17311111111");
-                DbCommand.insert(db, DBInfos.USER_TABLE.TABLE_NAME, null, values, new DbCommand.ResultCallback<Long>() {
-                    @Override
-                    public void updateUI(Long result) {
-                        if(result > 0)
-                            Toast.makeText(MainActivity.this, "插入成功", Toast.LENGTH_SHORT).show();
-                        else
-                            Toast.makeText(MainActivity.this, "插入失败", Toast.LENGTH_SHORT).show();
-                    }
-                });
-            }
-        });
+//
+//        btn_insert.setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View v) {
+//                ContentValues values = new ContentValues();
+//                values.put("id", RandomUtils.nextInt());
+//                values.put("name", "kyh");
+//                values.put("phone", "17311111111");
+//                DbCommand.insert(db, DBInfos.USER_TABLE.TABLE_NAME, null, values, new DbCommand.ResultCallback<Long>() {
+//                    @Override
+//                    public void updateUI(Long result) {
+//                        if(result > 0)
+//                            Toast.makeText(MainActivity.this, "插入成功", Toast.LENGTH_SHORT).show();
+//                        else
+//                            Toast.makeText(MainActivity.this, "插入失败", Toast.LENGTH_SHORT).show();
+//                    }
+//                });
+//            }
+//        });
 
 
     }

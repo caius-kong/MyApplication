@@ -1,5 +1,6 @@
 package com.zbiti.myapplication;
 
+import android.database.Observable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -16,8 +17,10 @@ import retrofit2.http.Query;
  *
  * Retrofit requires at minimum Java 7 or Android 2.3.
  *
- * 1、定义服务接口 (细化每一个请求url)
- * 2、创建Retrofit对象，并创建服务对象 (所有请求的基本url)
+ * Retrofit与okhttp共同出自于Square公司，retrofit就是对okhttp做了一层封装。与Okhttp不同的是，Retrofit需要定义一个接口。
+ *
+ * 1、定义服务接口 (细化每一个请求url，路由与接口绑定)
+ * 2、创建Retrofit对象，并创建服务对象 (所有请求的基本url， api入口)
  * 3、调用服务api，并execute/enqueue (执行请求，接收响应)
  */
 public class MainActivity extends AppCompatActivity {
@@ -33,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 .build();
 
         MyService myService = retrofit.create(MyService.class);
-        Call<User> call = myService.login("jack", "123456");
+        Call<User> call = myService.login1("jack", "123456");
         call.enqueue(new Callback<User>() {
             @Override
             public void onResponse(Call<User> call, Response<User> response) {
@@ -51,7 +54,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public interface MyService{
-        @GET("login")
-        Call<User> login(@Query("username") String username, @Query("password") String password);
+        // 加入请求队列处理
+        @GET("login1")
+        Call<User> login1(@Query("username") String username, @Query("password") String password);
+
+        // 直接返回callback处理返回结果
+        @GET("login2")
+        void login2(@Query("username") String username, @Query("password") String password, Callback<User> callback);
+
+        // 搭配Rxjava处理
+        @GET("login3")
+        Observable<User> login3(@Query("username") String username, @Query("password") String password);
     }
 }
