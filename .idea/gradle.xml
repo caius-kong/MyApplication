@@ -23,6 +23,7 @@
             <option value="$PROJECT_DIR$/Demo_esperandro" />
             <option value="$PROJECT_DIR$/Demo_fragment" />
             <option value="$PROJECT_DIR$/Demo_listView_downRefresh" />
+            <option value="$PROJECT_DIR$/Demo_service" />
             <option value="$PROJECT_DIR$/Framework_Rxjava" />
             <option value="$PROJECT_DIR$/Framework_android-async-http" />
             <option value="$PROJECT_DIR$/Framework_okhttp" />

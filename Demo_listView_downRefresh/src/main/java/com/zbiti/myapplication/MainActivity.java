@@ -69,7 +69,7 @@ public class MainActivity extends ListActivity implements AbsListView.OnScrollLi
                 public void run() {
                     loadData(adapter.getCount());
                     adapter.notifyDataSetChanged(); //数据集变化后,通知adapter
-                    listView.setSelection(visibleLastIndex - visibleItemCount + 1 + 1); //设置选中项
+                    listView.setSelection(visibleLastIndex - visibleItemCount + 1 + 1); //设置选中项（position位置的item到listview的最顶端）
                 }
             }, 2000);
         }

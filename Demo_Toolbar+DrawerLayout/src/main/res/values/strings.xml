@@ -2,7 +2,7 @@
     <string name="app_name">Toolbar+DrawerLayout</string>
 
     <string name="menu_square_bingo">首页</string>
-    <string name="menu_my_bingo">个人中心</string>
+    <string name="menu_my_bingo">商品列表</string>
     <string name="menu_my_favorite">我的收藏</string>
     <string name="menu_change_theme">设置主题</string>
     <string name="menu_feedback">意见反馈</string>
