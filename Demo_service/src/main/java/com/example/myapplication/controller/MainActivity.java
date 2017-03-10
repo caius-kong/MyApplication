@@ -18,6 +18,9 @@ import com.example.myapplication.service.MyService2;
 /**
  * C层：在Android中，Activity处理用户交互问题，因此可以认为Activity是控制器。
  * Activity读取V视图层的数据（如:EditText控件的数据），控制用户输入（如:EditText控件数据的输入），并向Model发送数据请求。
+ *
+ * 1、Service的2种创建方式：Service、IntentService
+ * 2、Service的2种启动方式：startService、bindService
  */
 public class MainActivity extends AppCompatActivity {
     private MainModel mainModel;
