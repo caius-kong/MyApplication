@@ -16,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/Demo_esperandro/Demo_esperandro.iml" filepath="$PROJECT_DIR$/Demo_esperandro/Demo_esperandro.iml" />
       <module fileurl="file://$PROJECT_DIR$/Demo_fragment/Demo_fragment.iml" filepath="$PROJECT_DIR$/Demo_fragment/Demo_fragment.iml" />
       <module fileurl="file://$PROJECT_DIR$/Demo_listView_downRefresh/Demo_listView_downRefresh.iml" filepath="$PROJECT_DIR$/Demo_listView_downRefresh/Demo_listView_downRefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo_service/Demo_service.iml" filepath="$PROJECT_DIR$/Demo_service/Demo_service.iml" />
       <module fileurl="file://$PROJECT_DIR$/Framework_Rxjava/Framework_Rxjava.iml" filepath="$PROJECT_DIR$/Framework_Rxjava/Framework_Rxjava.iml" />
       <module fileurl="file://$PROJECT_DIR$/Framework_android-async-http/Framework_android-async-http.iml" filepath="$PROJECT_DIR$/Framework_android-async-http/Framework_android-async-http.iml" />
       <module fileurl="file://$PROJECT_DIR$/Framework_okhttp/Framework_okhttp.iml" filepath="$PROJECT_DIR$/Framework_okhttp/Framework_okhttp.iml" />

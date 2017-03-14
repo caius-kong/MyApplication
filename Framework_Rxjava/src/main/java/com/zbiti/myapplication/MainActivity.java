@@ -71,10 +71,27 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * 典型的Rxjava
+     *
+     * Subscriber是Observer的实现类，其实在 RxJava 的 subscribe 过程中，Observer 也总是会先被转换成一个 Subscriber 再使用。
+     * 所以如果你只想使用基本功能，选择 Observer 和 Subscriber 是完全一样的
+     *
      */
     public void helloWorld1() {
-        // Subscriber是Observer的实现类，其实在 RxJava 的 subscribe 过程中，Observer 也总是会先被转换成一个 Subscriber 再使用。所以如果你只想使用基本功能，选择 Observer 和 Subscriber 是完全一样的
-        final Subscriber<String> subscriber = new Subscriber<String>() {
+        // 被观察者，定义主题，变化者，事件队列
+        Observable<String> observable = Observable.create(new Observable.OnSubscribe<String>() {
+            @Override
+            public void call(Subscriber<? super String> subscriber) {
+                subscriber.onNext("hello");
+                subscriber.onNext("world");
+                subscriber.onCompleted();
+            }
+        });
+        // 创建被观察者时，RxJava 还提供了一些方法用来快捷创建事件队列
+//        String[] strs = new String[]{"hello","world"};
+//        Observable<String> observable = Observable.from(strs);
+//        Observable<String> observable = Observable.just("hello", "world");
+
+        observable.subscribe(new Subscriber<String>() {
             @Override
             public void onCompleted() {
                 System.out.println("--->onCompleted");
@@ -89,22 +106,7 @@ public class MainActivity extends AppCompatActivity {
             public void onNext(String s) {
                 System.out.println("--->" + s);
             }
-        };
-
-        Observable<String> observable = Observable.create(new Observable.OnSubscribe<String>() {
-            @Override
-            public void call(Subscriber<? super String> subscriber) {
-                subscriber.onNext("hello");
-                subscriber.onNext("world");
-                subscriber.onCompleted();
-            }
         });
-        // 创建被观察者时，RxJava 还提供了一些方法用来快捷创建事件队列
-//        String[] strs = new String[]{"hello","world"};
-//        Observable<String> observable = Observable.from(strs);
-//        Observable<String> observable = Observable.just("hello", "world");
-
-        observable.subscribe(subscriber);
     }
 
     /**
@@ -163,6 +165,7 @@ public class MainActivity extends AppCompatActivity {
                         subscriber.onNext(R.mipmap.ic_launcher);
                     }
                 })
+                // 由后面跟着的 subscribeOn()规定线程
                 .doOnSubscribe(new Action0() {
                     @Override
                     public void call() {

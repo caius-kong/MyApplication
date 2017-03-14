@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/activity_main"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.myapplication.controller.MainActivity">
+
+    <ToggleButton
+        android:textOff="启动服务1"
+        android:textOn="停止服务1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toggleButton1"
+         />
+
+    <ToggleButton
+        android:textOff="启动服务2"
+        android:textOn="停止服务2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toggleButton2"
+         />
+
+</LinearLayout>

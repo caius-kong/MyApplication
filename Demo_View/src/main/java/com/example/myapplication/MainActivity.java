@@ -29,6 +29,9 @@ public class MainActivity extends AppCompatActivity{
         setupAnimatorSet();
     }
 
+    /**
+     * valueAnimator是属性动画的核心类: 高度自由定制，因此显得比较繁琐
+     */
     private void setupValueAnimator(){
         ValueAnimator valueAnimator = (ValueAnimator) AnimatorInflater.loadAnimator(getApplicationContext(), R.animator.value_animator);
         valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
@@ -40,6 +43,9 @@ public class MainActivity extends AppCompatActivity{
         valueAnimator.start();
     }
 
+    /**
+     * ValueAnimator的子类，能够直接操作任意对象的任意属性
+     */
     private void setupObjectAnimator(){
         ObjectAnimator objectAnimator = ObjectAnimator.ofFloat(myImageView, "translationX", 0, 50, 0);
         objectAnimator.setDuration(2000);
